@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oscars</title>
+    <script type="module" src="client.js"></script>
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <form id="oscar-form">
+      <div>
+        <label>Enter the year:</label>
+        <input type="text" id="year" placeholder="e.g 2010" />
+      </div>
+      <div>
+        <label>Enter the category:</label>
+        <input type="text" id="category" placeholder="e.g Cinematography" />
+      </div>
+      <div>
+        <label>Enter the nominee:</label>
+        <input type="text" id="nominee" placeholder="e.g The Social Network" />
+      </div>
+      <div>
+        <label>Enter the info:</label>
+        <input type="text" id="info" placeholder="e.g Jeff Cronenweth" />
+      </div>
+      <div>
+        <label>Enter the nominee or info:</label>
+        <input type="text" id="nomInfo" placeholder="e.g Jeff Cronenweth" />
+      </div>
+      <div>
+        <label>Enter the number of times:</label>
+        <input
+          type="text"
+          id="times"
+          placeholder="the number of times a nominee was nominated"
+        />
+      </div>
+      <div>
+        <label for="won">Select those nominations or nominees who: </label>
+        <select name="won" id="won">
+          <option value="">both</option>
+          <option value="yes">won</option>
+          <option value="no">did not win</option>
+        </select>
+      </div>
+    </form>
+    <div id="actions">
+      <button id="get-nominations">Get Nominations</button>
+      <button id="get-nominees">Get Nominees</button>
+      <button id="clear-input">Clear Input</button>
+      <button id="clear-output">Clear Output</button>
+    </div>
+    <div id="output"></div>
+  </body>
+</html>
